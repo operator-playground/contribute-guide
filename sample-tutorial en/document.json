@@ -1,0 +1,7 @@
+{
+    "title": "Sample tutorial",
+    "description": "Sample description",
+    "duration": "30 min",
+    "hasInlineModules": true,
+    "inlineModuleDelimiter": "H3"
+}
