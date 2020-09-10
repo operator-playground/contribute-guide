@@ -1,0 +1,69 @@
+{
+    "name": "MVC Database Stack",
+    "platform": "kubernetes",
+    "description": "",
+    "logo": "_attachments/SalesStack.png",
+    "meta": {
+       "Backend": ["Express (NodeJs)"],
+       "Frontend": ["React"],
+       "Database": ["PostgreSQL"],
+       "Install time:" : ["10 minutes"]
+    },
+    "commands": [
+        {
+            "description": "Create Namespace",
+            "exec": "export PGO_OPERATOR_NAMESPACE=pgo && kubectl create namespace pgo"
+        },
+        {
+            "description": "Clone and Prepare ",
+            "exec": "git clone -b sample-app https://github.com/operator-playground/postgres-operator && cd postgres-operator && kubectl create -f postgre.yaml && kubectl create -f secret.yaml"
+        },
+        {
+            "description": "Install Client Credentials and Download the PGO Binary and Client Certificates",
+            "exec": "PGO_CMD=kubectl ./deploy/install-bootstrap-creds.sh && PGO_CMD=kubectl ./installers/kubectl/client-setup.sh"
+        },
+        {
+            "description": "Export PGO data that will be used for Cluster cration",
+            "exec": "export PATH=/home/student/.pgo/pgo:$PATH && export PGOUSER=/home/student/.pgo/pgo/pgouser && export PGO_CA_CERT=/home/student/.pgo/pgo/client.crt && export PGO_CLIENT_CERT=/home/student/.pgo/pgo/client.crt && export PGO_CLIENT_KEY=/home/student/.pgo/pgo/client.key"
+        },
+        {
+            "description": "Create an Service",
+            "exec": "curl -o service.yaml https://raw.githubusercontent.com/operator-playground/postgres-operator/sample-app/service.yaml && kubectl create -f service.yaml -n pgo"
+        },
+        {
+            "description": "Create PGO Cluster",
+            "exec": "export PGO_APISERVER_URL=https://127.0.0.1:32443 && pgo create cluster salesdb --username pguser --password password -n pgo"
+        },
+        {
+            "description": "Clone the Sample code",
+            "exec": "cd /home/student/projects && git clone https://42d382526298a106dca059e3f73637211fe6b2c5@github.ibm.com/dwedge/postgresql-sales-frontend.git && git clone https://42d382526298a106dca059e3f73637211fe6b2c5@github.ibm.com/dwedge/postgresql-sales-backend.git" 
+        },
+        {
+            "description": "Create Backend Deployment Service",
+            "exec":  "cd /home/student/projects/postgresql-sales-backend/deploy && kubectl create -f deployment.yaml -n pgo && kubectl create -f service.yaml -n pgo"
+            
+        },
+        {
+            "description": "Create Frontend Deployment Service",
+            "exec":  "cd /home/student/projects/postgresql-sales-frontend/deploy && kubectl create -f deployment.yaml -n pgo && kubectl create -f service.yaml -n pgo"
+        }
+    ],
+    "content": [
+        "explore-data-sql",
+        "postgresql",
+        "backend-tutorial",
+        "frontend-tutorial"
+    ],
+    "display": [
+        {
+            "name": "Developer Dashboard",
+            "url": "##DNS.host##/codeserver",
+            "enabled": true
+        },
+        {
+            "name": "Platform Dashboard",
+            "url": "##DNS.host##/kube-dashboard",
+            "enabled": true
+        }
+    ]
+}
