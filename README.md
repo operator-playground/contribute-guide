@@ -45,7 +45,7 @@ Following are the steps that will help to do the same.
 
 4. **Tutorial Files**
 
-    Tutorials - Developers user guide that provides information on:
+    Developers user guide that provides information on:
     
     a. How to use the stack.
    
