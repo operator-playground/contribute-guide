@@ -35,6 +35,8 @@ Following are the steps that will help to do the same.
       This page would be rendered on the stack builder dashboard and it would contain a brief description of a stack/dataset along with the  relevant information like architecture diagram, Dataset Schema etc as shown below.
 
       ![Cover.md](_attachments/3.png)
+      ![Cover.md](_attachments/3-1.png)
+
 
    b. Tutorials - Developers user guide that provides information on:
 
@@ -74,4 +76,4 @@ Following are the steps that will help to do the same.
 
    **NOTE:** The userguide follows a flat file structure (all the files should be in the root of the stack folder) and cannot be in a nested structure.
 
-   ![Tutorial File](_attachments/backend.png)
+   ![Tutorial File](_attachments/tutorial-sample.jpg)
