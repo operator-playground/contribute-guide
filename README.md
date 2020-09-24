@@ -29,10 +29,6 @@ Following are the steps that will help to do the same.
       c. cover - The name of the cover file for the stack/dataset. Refer below for more details on cover.
 
       c. content - Userguide/Tutorials for the stack.
-      ![Stackconfig.json](_attachments/help.jpg)
-      ![Stackconfig.json](_attachments/4.png)
-
-      ![Stackconfig.json](_attachments/5.png)
 
    2. **cover.md**
 
@@ -58,4 +54,4 @@ Following are the steps that will help to do the same.
 
    **NOTE:** The userguide follows a flat file structure (all the files should be in the root of the stack folder) and cannot be in a nested structure.
 
-   ![Tutorial File](_attachments/tutorial-sample.jpg)
+
