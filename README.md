@@ -29,6 +29,10 @@ Following are the steps that will help to do the same.
       c. cover - The name of the cover file for the stack/dataset. Refer below for more details on cover.
 
       c. content - Userguide/Tutorials for the stack.
+      
+      ![document.json](_attachments/document-json.jpg)
+      ![document.json](_attachments/help.jpg)
+      
 
    2. **cover.md**
 
