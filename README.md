@@ -57,7 +57,7 @@ Following are the steps that will help to do the same.
     
 
    **NOTE:** 
-1. Users can contribute more than 1 .md file as part of the user guide content. 
-2. The userguide follows a flat file structure (all the files should be in the root of the stack folder) and cannot be in a nested structure.
+- Users can contribute more than 1 .md file as part of the user guide content. 
+- The userguide follows a flat file structure (all the files should be in the root of the stack folder) and cannot be in a nested structure.
 
 
