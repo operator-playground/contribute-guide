@@ -29,6 +29,10 @@ Following are the steps that will help to do the same.
       c. cover - The name of the cover file for the stack/dataset. Refer below for more details on cover.
 
       c. content - Userguide/Tutorials for the stack.
+      ![Stackconfig.json](_attachments/help.jpg)
+      ![Stackconfig.json](_attachments/4.png)
+
+      ![Stackconfig.json](_attachments/5.png)
 
    2. **cover.md**
 
@@ -38,7 +42,7 @@ Following are the steps that will help to do the same.
       ![Cover.md](_attachments/3-1.png)
 
 
-   b. Tutorials - Developers user guide that provides information on:
+   3. Tutorials - Developers user guide that provides information on:
 
       - How to use the stack.
 
@@ -48,29 +52,7 @@ Following are the steps that will help to do the same.
 
       - How to access the deployed stack.
 
-      ![Stackconfig.json](_attachments/4.png)
-
-      ![Stackconfig.json](_attachments/5.png)
-
-
-3. **cover.md**
-
-   This page would be rendered on the stack builder dashboard and it would contain a brief description of a stack along with the  architecture diagram as shown.
-
-   ![Cover.md](_attachments/2.png)
-   ![Cover.md](_attachments/3.png)
-
-4. **Tutorial Files**
-
-   Developers user guide that provides information in .**md** format on:
-
-   a. How to use the stack.
-
-   b. Understand the stack composition/architecture.
-
-   c. How to deploy the stack, if user wishes to deploy manually.
-
-   d. How to access the deployed stack.
+      ![Stackconfig.json](_attachments/tutorial.jpg)
 
    Users can contribute more than 1 .md file as part of the user guide content.  
 
