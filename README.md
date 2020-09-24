@@ -34,7 +34,6 @@ Following are the steps that will help to do the same.
 
       This page would be rendered on the stack builder dashboard and it would contain a brief description of a stack/dataset along with the  relevant information like architecture diagram, Dataset Schema etc as shown below.
 
-      ![Cover.md](C:/Program Files/Typora/_attachments/2.png)
       ![Cover.md](_attachments/3.png)
 
    b. Tutorials - Developers user guide that provides information on:
