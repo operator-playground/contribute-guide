@@ -16,7 +16,7 @@ Following are the steps that will help to do the same.
 
 3. The folder structure is defined as below:
 
-   ![Github Repository Structure](_attachments/1.png)
+   ![Github Repository Structure](_attachments/1.jpg)
 
    1. **document.json**
 
