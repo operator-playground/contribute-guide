@@ -1,60 +1,78 @@
 ### Contribute a Stack
 
-We encourage the developer community to contribute to the stack. 
+We encourage the developer community to contribute to :
+
+- Stacks
+- Datasets
+
 Following are the steps that will help to do the same.
 
-1. **Create github repository with the following structure.**
+1. **Clone/Fork github repository : https://github.com/operator-playground/operator-tutorials.git**
 
-   The github structure defines:
+2. Each Stack/Dataset requires a folder to be created with the naming convention:
 
-   a. Tutorials
+   - Stack:  `<stack-name>-stack en `
+   - Dataset: `<dataset-name>-dataset en `
 
-   b. Architecture/Overview
-
-   c. Configurations
+3. The folder structure is defined as below:
 
    ![Github Repository Structure](_attachments/1.png)
 
-2. **stackconfig.json**
+   1. **document.json**
 
-   This json file defines all the information specific to the stack:
+      This json file defines all the information specific to the stack/dataset:
 
-   a. Commands - Defines the descriptions and the commands that needs to be executed to deploy the stack.
+      a. meta - Describes the stack specifications.
+
+      b. commands - Defines the commands that needs to be executed to deploy the stack/dataset.
+
+      c. cover - The name of the cover file for the stack/dataset. Refer below for more details on cover.
+
+      c. content - Userguide/Tutorials for the stack.
+
+   2. **cover.md**
+
+      This page would be rendered on the stack builder dashboard and it would contain a brief description of a stack/dataset along with the  relevant information like architecture diagram, Dataset Schema etc as shown below.
+
+      ![Cover.md](C:/Program Files/Typora/_attachments/2.png)
+      ![Cover.md](_attachments/3.png)
 
    b. Tutorials - Developers user guide that provides information on:
 
       - How to use the stack.
-      
+
       - Understand the stack composition/architecture.
-  
+
       - How to deploy the stack, if user wishes to deploy manually.
- 
+
       - How to access the deployed stack.
-   
+
       ![Stackconfig.json](_attachments/4.png)
 
       ![Stackconfig.json](_attachments/5.png)
 
 
 3. **cover.md**
-   
+
    This page would be rendered on the stack builder dashboard and it would contain a brief description of a stack along with the  architecture diagram as shown.
-   
+
    ![Cover.md](_attachments/2.png)
    ![Cover.md](_attachments/3.png)
 
 4. **Tutorial Files**
 
-    Developers user guide that provides information on:
-    
-    a. How to use the stack.
-   
-    b. Understand the stack composition/architecture.
-  
-    c. How to deploy the stack, if user wishes to deploy manually.
- 
-    d. How to access the deployed stack.
+   Developers user guide that provides information in .**md** format on:
 
-    ![Tutorial File](_attachments/backend.png)
+   a. How to use the stack.
 
+   b. Understand the stack composition/architecture.
 
+   c. How to deploy the stack, if user wishes to deploy manually.
+
+   d. How to access the deployed stack.
+
+   Users can contribute more than 1 .md file as part of the user guide content.  
+
+   **NOTE:** The userguide follows a flat file structure (all the files should be in the root of the stack folder) and cannot be in a nested structure.
+
+   ![Tutorial File](_attachments/backend.png)
